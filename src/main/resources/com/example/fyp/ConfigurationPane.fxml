@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="650.0" maxWidth="1050.0" minHeight="650.0" minWidth="1050.0" prefHeight="650.0" prefWidth="1050.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fyp.Controllers.ConfigurationController">
+    <children>
+        <AnchorPane prefHeight="650.0" prefWidth="1050.0" style="-fx-background-color: #283040;">
+         <children>
+            <Label layoutX="80.0" layoutY="65.0" text="List Of Generated Instance: " textFill="#f3f0f5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="80.0" layoutY="129.0" mnemonicParsing="false" onAction="#pushAction" prefHeight="38.0" prefWidth="253.0" text="Push to cloud" />
+            <Label fx:id="instanceListLabel" layoutX="340.0" layoutY="65.0" prefHeight="21.0" prefWidth="701.0" textFill="#f3f0f5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="94.0" text="Region: " textFill="#f3f0f5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="regionChoiceBox" layoutX="155.0" layoutY="93.0" prefHeight="24.0" prefWidth="175.0" />
+         </children></AnchorPane>
+    </children>
+</Pane>

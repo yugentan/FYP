@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="720" prefWidth="1280" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fyp.Controllers.DashboardController">
+   <top>
+      <Pane prefHeight="70.0" prefWidth="1280.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #c8d9de; -fx-border-style: solid; -fx-background-color: #2b3445;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="37.0" layoutY="20.0" text="Dashboard" textFill="#f3f0f5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="viewTitleLabel" alignment="CENTER_RIGHT" layoutY="25.0" prefHeight="21.0" prefWidth="1280.0" style="-fx-padding: 0px 50px 0px 0px;" text="Resource " textFill="#f3f0f5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="650.0" prefWidth="230.0" style="-fx-border-width: 0 1 0 0; -fx-border-color: #c8d9de; -fx-background-color: #2b3445;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="-1.0" layoutY="608.0" mnemonicParsing="false" onAction="#logoutPressed" prefHeight="42.0" prefWidth="230.0" text="Logout" />
+            <VBox layoutX="-1.0" prefHeight="285.0" prefWidth="232.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#resourcePressed" prefHeight="42.0" prefWidth="230.0" text="Resource" />
+                  <Button mnemonicParsing="false" onAction="#simulationPressed" prefHeight="42.0" prefWidth="230.0" text="Simulation" />
+                  <Button mnemonicParsing="false" onAction="#configurationPressed" prefHeight="42.0" prefWidth="230.0" text="Configuration" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="650.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="contentArea" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
